@@ -1,0 +1,65 @@
+#courses {
+  width: 90%;
+  margin: auto;
+}
+
+.glider-contain {
+  position: relative;
+  max-width: 900px;
+}
+
+.glider {
+  overflow-x: hidden;
+}
+
+.card {
+  max-width: 900px;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  margin: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin: 1.5rem 1rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+}
+
+.card-udemy {
+  background: #EB5352;
+}
+
+.card-coursera {
+  background: #4A89DC;
+}
+
+.card-linkedin {
+  background: #0077B5;
+}
+
+.arrow{
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.right-arrow{
+  right: 2%;
+}
+
+.left-arrow{
+  left: 2%;
+}

@@ -1,0 +1,317 @@
+@media screen and (max-width: 390px) {
+  .companies .company {
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  #education > div h2 {
+    font-size: 1.2rem;
+  }
+
+  #education > div p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 17px;
+  }
+
+  //All the SVGs
+  .svg-img {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  //All the SVGs
+  .svg-img {
+    padding: 4rem;
+  }
+
+  //Change the course card
+  .card h3 {
+    margin: 1.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  //All the SVGs
+  .svg-img {
+    padding: 2rem 5rem;
+  }
+
+  .row {
+    margin: 3rem 4rem;
+  }
+
+  //Change the course card
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  //All the SVGs
+  .svg-img {
+    padding: 2rem 6rem;
+  }
+
+  //Change the course card
+  .card {
+    padding: 2rem;
+  }
+  .glider {
+    margin: auto 4rem;
+  }
+  .arrow {
+    filter: invert(100%);
+    transform: scale(1.3) translateY(-50%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .arrow:hover {
+    transform: scale(1.4) translateY(-50%);
+  }
+
+  .row {
+    margin: 3rem 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  //All the SVGs
+  .svg-img {
+    padding: 2rem 8rem;
+  }
+
+  //Change the course card
+  .card {
+    padding: 3rem;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  //Hide the header
+  header {
+    display: none;
+  }
+
+  .row {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+
+  #myBtnContainer {
+    margin: 0 6rem;
+  }
+
+  .svg-img {
+    padding: 0;
+    transform: scale(1.2);
+  }
+
+  //Change the home section
+  .home-text {
+    grid-column: span 4;
+    align-self: center;
+    justify-content: start;
+    text-align: start;
+  }
+
+  .lg-heading {
+    margin-top: 0;
+    font-size: 2.9rem;
+  }
+
+  .sm-heading {
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .home-img {
+    grid-column: span 4;
+    align-self: center;
+  }
+
+  .home-social a {
+    margin-left: 0;
+    margin-right: 2.5rem;
+  }
+
+  //Change the about section
+  #about {
+    grid-template-rows: 20% auto;
+  }
+  .about-text, .about-img {
+    grid-column: span 4;
+    align-self: center;
+    justify-content: start;
+  }
+  .about-text {
+    order: 2;
+    @include animateToX(50%);
+  }
+  .about-img {
+    order: 1;
+    @include animateToX(-50%);
+  }
+  .page-heading {
+    grid-column: span 8;
+    font-size: 1.5rem;
+  }
+
+  //Change the education section
+  .about-institutions, .education-img {
+    grid-column: span 4;
+    align-self: center;
+  }
+
+  #education .about-institutions {
+    @include animateToX(-50%);
+  }
+
+  #work-exp p {
+    @include animateToX(50%);
+  }
+
+  //Change the work-experience section
+  #work-exp {
+    p, .work-exp-img {
+      grid-column: span 4;
+      align-self: center;
+    }
+
+    p {
+      order: 2;
+      margin-left: 1rem;
+    }
+
+    .work-exp-img {
+      order: 1;
+    }
+
+    .companies {
+      margin-top: 4rem;
+    }
+  }
+
+  //Change the Projects section
+  .row {
+    grid-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1084px) {
+  .lg-heading {
+    font-size: 3.2rem;
+  }
+
+  .sm-heading {
+    font-size: 1.7rem;
+  }
+
+  .card {
+    padding: 4rem;
+  }
+
+  .right-arrow {
+    right: 0;
+  }
+
+  .left-arrow {
+    left: 0;
+  }
+
+  #work-exp .companies {
+    margin-top: 6rem;
+    align-items: flex-end;
+
+    .company:nth-child(1) {
+      transition: all 1s ease-out 0.1s;
+    }
+
+    .company:nth-child(2) {
+      transition: all 1s ease-out 0.3s;
+    }
+
+    .company:nth-child(3) {
+      transition: all 1s ease-out 0.5s;
+    }
+  }
+}
+
+//desktop style
+@media screen and (min-width: 1250px) {
+  body {
+    font-size: 24px;
+  }
+
+  .home-text {
+    grid-column: span 5;
+  }
+
+  .lg-heading {
+    font-size: 4rem;
+  }
+
+  .sm-heading {
+    font-size: 2.2rem;
+  }
+
+  .home-img {
+    grid-column: span 3;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .home-text {
+    margin-left: 4rem;
+  }
+
+  .home-social {
+    margin-top: 4rem;
+
+    img {
+      transform: scale(1.2);
+    }
+
+    a:hover img, a:focus img {
+      transform: scale(1.3);
+    }
+  }
+
+  .home-img {
+    grid-column: span 3;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

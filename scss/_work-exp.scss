@@ -1,0 +1,121 @@
+#work-exp {
+  p {
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 4rem 0;
+    font-weight: 600;
+    grid-column: span 8;
+
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .work-exp-img {
+    text-align: center;
+    grid-column: span 8;
+  }
+
+  p, .work-exp-img {
+    @include animateToX(-50%);
+  }
+
+  p.slide-in, .work-exp-img.slide-in {
+    @include animateToOriginal;
+  }
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .company {
+    flex: 1 1 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+
+  .company.slide-in {
+    @include animateToOriginal;
+  }
+
+  h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+    margin: 1.2rem 0 0.2rem 0;
+    font-size: 1.4rem;
+  }
+}
+
+
+.light-window {
+  animation: night-window-light 4s ease-in-out infinite alternate 3s;
+}
+
+#building {
+  animation: night-building 4s ease-in-out infinite alternate 3s;
+}
+
+#sky {
+  animation: night-sky 4s ease-in-out infinite alternate 3s;
+}
+
+.window {
+  animation: night-window-opacity 4s ease-in-out infinite alternate 3s;
+}
+
+#coder {
+  animation: person 1.5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes night-building {
+  from {
+    fill: #DFD9FD;
+  }
+  to {
+    fill: #C1B5FF;
+  }
+}
+
+@keyframes night-sky {
+  from {
+    fill: #B9ABFF;
+  }
+  to {
+    fill: #625B88;
+  }
+}
+
+@keyframes night-window-light {
+  0% {
+    fill: #5335EC;
+    opacity: 0.4;
+  }
+  50% {
+    fill: #FFFF00;
+    opacity: 0.7;
+  }
+  100% {
+    fill: #FFFF00;
+    opacity: 0.9;
+  }
+
+}
+
+@keyframes night-window-opacity {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+

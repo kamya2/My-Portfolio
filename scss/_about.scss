@@ -1,0 +1,50 @@
+.about-text {
+  text-align: center;
+  grid-column: 1/9;
+
+  h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 2.4rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 2rem 0;
+    color: white;
+    background: rgba(15, 76, 129, 0.8);
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    border: none;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  input:hover, input:focus {
+    background: rgba(15, 76, 129, 0.9);
+  }
+}
+
+.about-img {
+  margin-top: 1rem;
+  grid-column: 1/9;
+  text-align: center;
+  //padding: 2rem;
+}
+
+.about-text, .about-img {
+  @include animateToX(-50%);
+}
+
+.about-text.slide-in, .about-img.slide-in {
+  @include animateToOriginal;
+}

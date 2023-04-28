@@ -1,0 +1,42 @@
+
+.uwindsor, .svnit {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0%;
+  
+}
+
+.just{
+  margin-bottom: 0%;
+  
+}
+
+
+.about-institutions {
+  display: flex;
+  flex-wrap: nowrap;
+  
+  justify-content: space-between;
+  padding-top: 0%;
+  
+  align-items: flex-end;
+  }
+
+
+#education > div h2 {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0.5rem 0 0.2rem 0;
+  letter-spacing: 1px;
+}
+
+#education > div p {
+  font-weight: bold;
+}
+
+#education > div{
+  @include animateToX(50%);
+}
+
+#education > div.slide-in{
+  @include animateToOriginal;
+}

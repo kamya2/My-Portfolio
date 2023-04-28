@@ -1,0 +1,14 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  @include animateToX(50%);
+
+  img {
+    justify-self: center;
+  }
+}
+
+.skills-grid.slide-in {
+  @include animateToOriginal;
+}
