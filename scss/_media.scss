@@ -10,6 +10,10 @@
     }
   }
 
+  .svg-img {
+    padding: 1rem 0;
+  }
+
   #education > div h2 {
     font-size: 1.2rem;
   }
@@ -26,7 +30,8 @@
 
   //All the SVGs
   .svg-img {
-    padding: 3rem;
+    // padding: 1rem;
+    padding: 1rem 0;
   }
 }
 

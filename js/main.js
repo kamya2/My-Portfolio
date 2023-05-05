@@ -104,10 +104,58 @@ workExpCompanies.forEach(section => {
     observer.observe(section);
 });
 
-// let skillsSection = document.querySelector(".skills-grid");
-// observer.observe(skillsSection);
+ let skillsSection = document.querySelector(".skills-grid");
+ observer.observe(skillsSection);
 
 let projects = document.querySelectorAll(".project");
 projects.forEach(section => {
     observer.observe(section);
 });
+
+
+// const text = "Hello, World!";
+// let index = 0;
+
+// function type() {
+//   const typingText = document.getElementById("typing");
+//   if (index < 13) {
+//     typingText.innerHTML += text.charAt(index);
+//     index++;
+//     setTimeout(type, 100);
+//   }
+// }
+
+// setTimeout(type, 1000);
+
+const phrases = "Hello, World!";
+let i = 0;
+let j = 0;
+
+function type() {
+  const typingText = document.getElementById("typing");
+  if (j < phrases.length) {
+    typingText.innerHTML += phrases.charAt(j);
+    j++;
+    setTimeout(type, 100);
+  } else {
+    setTimeout(erase, 1000);
+  }
+}
+
+function erase() {
+  const typingText = document.getElementById("typing");
+  if (j > 1) {
+    typingText.innerHTML = phrases.substring(0, j - 1);
+    j--;
+    setTimeout(erase, 50);
+  } else {
+    i++;
+    if (i >= phrases.length) {
+      i = 0;
+    }
+    setTimeout(type, 500);
+  }
+}
+
+setTimeout(type, 1000);
+
